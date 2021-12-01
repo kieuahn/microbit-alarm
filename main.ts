@@ -63,7 +63,6 @@ input.onButtonPressed(Button.AB, function () {
     music.rest(music.beat(BeatFraction.Quarter))
     music.playTone(262, music.beat(BeatFraction.Quarter))
     music.rest(music.beat(BeatFraction.Eighth))
-    basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
     for (let index = 0; index < 2; index++) {
@@ -87,8 +86,8 @@ input.onButtonPressed(Button.B, function () {
     }
     music.playTone(233, music.beat(BeatFraction.Eighth))
     music.rest(music.beat(BeatFraction.Quarter))
-    music.playTone(262, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(262, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Half))
     for (let index = 0; index < 2; index++) {
         music.playTone(196, music.beat(BeatFraction.Quarter))
         music.rest(music.beat(BeatFraction.Eighth))
@@ -101,6 +100,9 @@ input.onButtonPressed(Button.B, function () {
     }
     music.playTone(233, music.beat(BeatFraction.Quarter))
     music.rest(music.beat(BeatFraction.Eighth))
+    music.playTone(262, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Eighth))
+    music.playTone(196, music.beat(BeatFraction.Quarter))
 })
 input.onGesture(Gesture.Shake, function () {
 	
